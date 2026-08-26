@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Automatisation | SupplyChain Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <span class="logo">SupplyChain Demo</span>
+    <a href="index.html">Accueil</a>
+    <a href="addProduct.html">Créer un produit</a>
+    <a href="tracability.html">Traçabilité</a>
+    <a href="automation.html">Automatisation</a>
+  </nav>
+
+  <div class="dashboard-container">
+    <section>
+        <button id="connectButton">Connecter MetaMask</button>
+        <div id="connectMsg" style="display:none; margin-top:10px;"></div>
+    </section>
+    <div id="messages" style="display: none;"></div>
+        
+    <div class="dashboard-title">Automatisation de la livraison et du paiement</div>
+    <div class="form-bloc">
+      <h2>Valider la livraison & paiement automatique</h2>
+      <div class="form-group">
+        <label for="produit-automatisation">Produit à livrer :</label>
+        <select class="select" id="produit-automatisation">
+          <option value="">-- Sélectionner un produit en transit --</option>
+          <!-- Les options seront remplies dynamiquement en JS -->
+        </select>
+      </div>
+      <div class="form-group">
+        <span>Montant à payer&nbsp;: <b>0.01 ETH</b></span>
+      </div>
+      <button id="btnAutoLivraison" class="btn">Valider livraison & payer</button>
+      <div id="messages" style="display:none;"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

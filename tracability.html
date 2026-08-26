@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Traçabilité | SupplyChain Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <span class="logo">SupplyChain Demo</span>
+    <a href="index.html">Accueil</a>
+    <a href="addProduct.html">Créer un produit</a>
+    <a href="tracability.html">Traçabilité</a>
+    <a href="automation.html">Automatisation</a>
+  </nav>
+  
+   <div class="dashboard-container">
+    <div class="form-container">
+        <section>
+            <button id="connectButton">Connecter MetaMask</button>
+            <div id="connectMsg" style="display:none; margin-top:10px;"></div>
+        </section>
+        <div id="messages" style="display: none;"></div>
+        
+        <div class="dashboard-title">Traçabilité des produits</div>
+            <div class="form-bloc">
+            <h2>Historique des produits</h2>
+            <div class="form-group">
+                <select class="select" id="produit-select">
+                    <option value="">-- Sélectionner un produit --</option>
+                </select>
+            </div>
+            <button id="btnAfficherHistorique" class="btn">Afficher l'historique</button>
+            <ul id="liste-historique"></ul>
+            </div>
+        </div>
+      
+
+    <div class="dashboard-title">Gestion des transferts</div>
+      <div class="form-bloc" style="margin-top:20px;">
+        <h2>Transférer la propriété d’un produit</h2>
+        <div class="form-group">
+          <label for="transfert-produit-select">Produit :</label>
+          <select class="select" id="transfert-produit-select">
+            <option value="">-- Sélectionner un produit --</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="proprietaire-select">Nouveau propriétaire :</label>
+          <select class="select" id="proprietaire-select">
+            <option value="">-- Sélectionner un acteur --</option>
+          </select>
+        </div>
+        <button type="button" id="btnTransferer" class="btn">Transférer propriété</button>
+        <div id="message-transfert" style="margin-top:10px;"></div>
+      </div>
+
+      <div class="form-bloc">
+        <h2>Historique des transferts</h2>
+        <div class="form-group">
+          <select class="select" id="transfert-select">
+              <option value="">-- Sélectionner un produit --</option>
+          </select>
+        </div>
+        <button type="button" id="btnAfficherTransferts" class="btn">Afficher les transferts</button>
+        <ul id="liste-transferts"></ul>
+      </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

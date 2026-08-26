@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Traçabilité | SupplyChain Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <span class="logo">SupplyChain Demo</span>
+    <a href="index.html">Accueil</a>
+    <a href="addProduct.html">Créer un produit</a>
+    <a href="tracability.html">Traçabilité</a>
+    <a href="automation.html">Automatisation</a>
+  </nav>
+  
+  <div class="dashboard-container">
+    <section>
+      <button id="connectButton">Connecter MetaMask</button>
+      <div id="connectMsg" style="display:none; margin-top:10px;"></div>
+    </section>
+    <div id="messages" style="display: none;"></div>
+    <!-- Création de produit -->
+    <section id="form-creer">
+      <h2>Créer un produit</h2>
+      <input type="number" id="id-produit" placeholder="ID produit">
+      <input type="text" id="nom-produit" placeholder="Nom du produit">
+      <input type="text" id="desc-produit" placeholder="Description">
+      <button id="btnCreerProduit">Créer</button>
+    </section>
+
+    <!-- Mise à jour du statut -->
+    <section id="form-statut">
+      <h2>Mettre à jour le statut</h2>
+      <select class="select" id="id-statut">
+        <option value="">-- Sélectionner un produit --</option>
+        <!-- Options générées dynamiquement -->
+      </select>
+      <select class="select" id="nouveau-statut">
+        <option value="en production">En production</option>
+        <option value="en transit">En transit</option>
+      </select>
+      <button id="btnMajStatut">Mettre à jour</button>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
