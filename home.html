@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Chaîne d’Approvisionnement</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <span class="logo">SupplyChain Demo</span>
+    <a href="index.html">Accueil</a>
+    <a href="addProduct.html">Créer un produit</a>
+    <a href="tracability.html">Traçabilité</a>
+    <a href="automation.html">Automatisation</a>
+  </nav>
+
+  <section class="connect-section">
+    <button id="connectButton">Connecter MetaMask</button>
+    <div id="connectMsg" style="display:none; margin-top:10px;"></div>
+  </section>
+
+  <div class="dashboard-container">
+    <div class="dashboard-title">Tableau de bord</div>
+    <div class="cards">
+      <div class="card">
+        <div class="count" id="total-products-count">0</div> <!-- ID pour le total -->
+        <div class="label">Produits totaux</div>
+      </div>
+      <div class="card">
+        <div class="count" id="in-production-count">0</div> <!-- ID pour en production -->
+        <div class="label">En production</div>
+      </div>
+      <div class="card">
+        <div class="count" id="in-transit-count">0</div> <!-- ID pour en transit -->
+        <div class="label">En transit</div>
+      </div>
+      <div class="card">
+        <div class="count" id="delivered-count">0</div> <!-- ID pour livrés -->
+        <div class="label">Livrés</div>
+      </div>
+    </div>
+
+    <div class="dashboard-apercu">
+      <h2>Aperçu</h2>
+      <p>
+        Ce tableau de bord vous donne une vue synthétique de l’état actuel de la chaîne d’approvisionnement : nombre total de produits, répartition par statut. Les fonctionnalités du prototype sont les suivantes :
+      <ul>
+        <li>Consultez la <b>traçabilité</b> détaillée de chaque produit</li>
+        <li>Visualisez les <b>transferts</b> et la transparence des opérations</li>
+        <li>Testez l’<b>automatisation</b> par smart contract</li>
+      </ul>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

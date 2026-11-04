@@ -1,4 +1,6 @@
-// === Variables globales ===
+
+// === Fichier JavaScript pour l'interaction avec le smart contract ===
+
 let provider, signer, contract;
 
 const contractAddress = '0x4Dd6A8789A8FC51FD50B6A96EEbd484848e053BF'; 
