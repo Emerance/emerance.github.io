@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon CV</title>
+  <title>Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
@@ -10,295 +10,125 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="bg-white dark:bg-gray-900">
-    <div class="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row">
-        <div class="flex justify-center xl:w-1/2">
-            <img class="h-80 w-80 object-cover rounded-full bg-fixed" src="img/img1.jpg" alt="">
-        </div>
 
-        <div class="flex flex-col items-center xl:items-start xl:w-1/2 xl:mt-0">
-            <h2 class="text-2xl font-semibold text-gray-800 xl:text-3xl dark:text-white">
-                SONGFACK NTOBOU Emerance De l'or
-            </h2>
-            <p class="text-lg text-gray-600 dark:text-gray-300">Développeuse web junior – Front-end</p>
-            <p class="text-lg text-gray-600 dark:text-gray-300">emerancedelor@gmail.com</p>
-            <p class="text-lg text-gray-600 dark:text-gray-300">+32 467 86 75 13</p>
-            <p class="text-lg text-gray-600 dark:text-gray-300">Boussu, Belgique</p>
-
-
-            <div class="mt-6 sm:-mx-2">
-                <a href="home.html" class="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-white transition-colors duration-300 bg-gray-900 rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-           
-                    <span class="mx-2">
-                        Prototype Blockchain
-                    </span>
-                </a>
-
-                <a href="#"
-                    class="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 mt-4 overflow-hidden text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
-                    
-                    <span class="mx-2">
-                        Prototype Ang
-                    </span>
-                </a>
-            </div>
-        </div>
-    </div>
-  </section>
-
-  <section class="bg-parallax bg-center bg-fixed h-[35vh] text-center text-white justify-center ">
-    <div class=" mx-auto max-w-6xl py-10"> 
-      <p class="text-4xl font-bold ">A propos de moi</p>
-      <p class="py-8 text-xl text-justify">Diplômée d'un Bachelier en Génie Logiciel (Analyste-Programmeur) et titulaire d’un Master en STIC à l’ULB, je maîtrise les fondamentaux du développement web (HTML5, CSS3, JavaScript). 
-         <br>Forte d'une première expérience pratique sur des applications web, je consolide actuellement mes compétences sur le framework Angular. 
-         <br>Rigoureuse et motivée, je souhaite mettre ma logique de code et ma réactivité au service du développement d'interfaces fluides et responsives.</p>
-    </div>
-  </section>
-
-  <section class="bg-white dark:bg-gray-900">
-    <div class="container px-6 py-10 mx-auto">
-      <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
-        <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl">
-          <span class="inline-block text-blue-500 dark:text-blue-400">
-            <i class="fa-solid fa-head-side-virus text-3xl"></i>
-          </span>
-          <p class="text-3xl font-semibold text-gray-700 capitalize dark:text-white">Compétences</p>
-          <p class="text-gray-500 dark:text-gray-300">
-            Développement front-end
-            <ul class="list-disc list-inside space-y-2 text-gray-500">
-              <li>HTML5, CSS3, Javascript, JSON</li>
-              <li>Boostrap, Tailwind CSS</li>
-            </ul>
-          </p>
-
-          <a href="#" onclick="document.getElementById('modal-competences').classList.remove('hidden')" id="btn-modal-skills" class="inline-flex p-2 text-blue-500 capitalize transition-colors duration-300 transform bg-blue-100 rounded-full rtl:-scale-x-100 dark:bg-blue-500 dark:text-white hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-            En savoir plus
-          </a>
-        </div>
-
-        <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl">
-          <span class="inline-block text-blue-500 dark:text-blue-400">
-            <i class="fa-solid fa-briefcase text-3xl"></i>
-          </span>
-          <p class="text-3xl font-semibold text-gray-700 capitalize">Expérience</p>
-
-          <p class="text-gray-500 dark:text-gray-300">
-            Analyste IT  <br> 06/2021 – 09/2021 | Douala, Cameroun
-            <ul class="list-disc list-inside space-y-2 text-gray-500">
-              <li>Analyse et rédaction de spécifications fonctionnelles</li>
-              <li>Conception et gestion de bases de données</li>
-            </ul>
-          </p>
-
-            <a href="#" onclick="document.getElementById('modal-experiences').classList.remove('hidden')" class="inline-flex p-2 text-blue-500 capitalize transition-colors duration-300 transform bg-blue-100 rounded-full rtl:-scale-x-100 dark:bg-blue-500 dark:text-white hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-              En savoir plus
-            </a>
-        </div>
-
-        <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl">
-          <span class="inline-block text-blue-500 dark:text-blue-400">
-            <i class="fa-solid fa-graduation-cap text-3xl"></i>
-          </span>
-          <p class="text-3xl font-semibold text-gray-700 capitalize">Formation</p>
-          <p class="text-gray-500 dark:text-gray-300"> Master en sciences et technologies de l'information et de la communication (2025)  <br> Université Libre de Bruxelles </p>
-          <p class="list-disc list-inside space-y-2 text-gray-500"> Mémoire : Conception et développement d'un prototype pour un processus logistique simplifié, </p>
-          <a href="#" onclick="document.getElementById('modal-formation').classList.remove('hidden')" class="inline-flex p-2 text-blue-500 capitalize transition-colors duration-300 transform bg-blue-100 rounded-full rtl:-scale-x-100 dark:bg-blue-500 dark:text-white hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-            En savoir plus
-          </a>
-        </div>
-
-        <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl">
-          <span class="inline-block text-blue-500 dark:text-blue-400">
-            <i class="fa-solid fa-earth-europe text-3xl"></i>
-          </span>
-          <p class="text-3xl font-semibold text-gray-700 capitalize">Langue</p>
-          <ul class="mt-3 space-y-2.5">
-            <li class="flex items-center justify-between max-w-xs text-gray-700 dark:text-gray-300">
-              <span class="font-medium">Français</span>
-              <span class="text-xs px-2.5 py-1 bg-green-100 text-green-800 rounded-full font-semibold">
-                Maternelle
-              </span>
-            </li>
-               
-            <li class="flex items-center justify-between max-w-xs text-gray-700">
-              <span class="font-medium">Anglais</span>
-              <span class="text-xs px-2.5 py-1 bg-blue-100 text-blue-800 rounded-full font-semibold">
-                Élémentaire (A2)
-              </span>
-            </li>
-          </ul>       
-        </div>
+<nav class="sticky top-0 z-50 bg-white/90 border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-bold text-lg text-gray-900">Emerance<span class="text-indigo-600">.Portfolio</span></a>
+      
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+          <a href="#about" class="hover:text-indigo-600">À propos</a>
+          <a href="#projets" class="hover:text-indigo-600">Projets</a>
+          <a href="contact.html" class="hover:text-indigo-600">Contact</a>
       </div>
+  
+      <a href="resume.html" class="bg-indigo-600 text-white text-sm font-medium px-4 py-2 rounded-lg">
+      Voir mon CV
+      </a>
+  </div>
+</nav>
+
+<section class="md:py-24 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+      Disponible immédiatement • Boussu / Belgique
+    </span>
+    
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
+      SONGFACK NTOBOU Emerance
+    </h1>
+    
+    <p class="mt-3 text-xl sm:text-2xl font-medium text-indigo-600">
+      Développeuse Web Junior — Front-End
+    </p>
+    
+    <p class="mt-6 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+      Diplômée d'un Master en STIC (ULB) et d'un Bachelier en Génie Logiciel, je conçois des interfaces web modernes, fluides et responsives.
+    </p>
+
+    <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#about" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-lg shadow-sm transition">
+        Découvrir à propos de moi
+      </a>
+      <a href="#projets" class="bg-white hover:bg-gray-100 text-gray-800 font-medium px-6 py-3 rounded-lg border border-gray-300 transition">
+        Découvrir mes prototypes
+      </a>
     </div>
+  </div>
 </section>
 
+<!-- --------------------------------------------------------
+      SESSION  : ABOUT 
+      -------------------------------------------------------- -->
 
-  <!-- --------------------------------------------------------
-       MODALE  : COMPÉTENCES 
-       -------------------------------------------------------- -->
-  <div id="modal-competences" class="hidden fixed inset-0 z-50 overflow-y-auto" role="dialog" aria-modal="true">
-    <div class="flex items-center justify-center min-h-screen p-4 text-center">
-        <div onclick="document.getElementById('modal-competences').classList.add('hidden')" class="fixed inset-0 bg-gray-500/75 backdrop-blur-sm transition-opacity"></div>
-        <div class="relative inline-block w-full max-w-md p-6 overflow-hidden text-left align-middle bg-white dark:bg-gray-900 rounded-xl shadow-xl transform transition-all">
-            <div class="flex items-center gap-3 border-b border-gray-100 dark:border-gray-800 pb-3">
-                <svg xmlns="http://w3.org" class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Mes Compétences</h3>
-            </div>
-            
-            <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-              <div>
-                <h4 class="font-semibold text-gray-800 dark:text-gray-200">Développement front-end</h4>
-                <p class="text-gray-500 dark:text-gray-400 mt-0.5">HTML5, CSS3, Javascript, JSON, Bootstrap, Tailwind CSS, Angular, Django <span class="text-xs italic text-gray-400">(Auto-formation)</span>, Node, REST API</p>
-              </div>
+<section id="about" class="mt-16">
+  <div class="text-center mb-8 px-6 max-w-6xl mx-auto">
+    <p class="text-2xl sm:text-3xl font-bold text-gray-900">À propos de moi</p>
+  </div>
 
-              <div>
-                <h4 class="font-semibold text-gray-800 dark:text-gray-200">Outils & Bases de données</h4>
-                <p class="text-gray-500 dark:text-gray-400 mt-0.5">Git/GitHub, Jira, Figma, Canva, Bizagi Modeler, Draw.io, Lucidchart, SQL, MySQL, PostgreSQL, SQL Server</p>
-              </div>
+  <div class="bg-parallax bg-center bg-scroll md:bg-fixed min-h-[35vh] flex items-center text-white px-6 py-10">
+    <div class="mx-auto max-w-6xl">
+      <p class="text-base sm:text-lg md:text-xl text-left md:text-justify leading-relaxed">
+        Diplômée d'un Bachelier en Génie Logiciel (Analyste-Programmeur) et titulaire d’un Master en STIC à l’ULB, je maîtrise les fondamentaux du développement web (HTML5, CSS3, JavaScript). <br class="hidden md:inline">
+        Forte d'une première expérience pratique sur des applications web, je consolide actuellement mes compétences sur le framework Angular. <br class="hidden md:inline">
+        Rigoureuse et motivée, je souhaite mettre ma logique de code et ma réactivité au service du développement d'interfaces fluides et responsives.
+      </p>
+    </div>
+  </div>
+</section>   
 
-              <div>
-                <h4 class="font-semibold text-gray-800 dark:text-gray-200">Analyse & conception</h4>
-                <p class="text-gray-500 dark:text-gray-400 mt-0.5">Analyse des besoins, spécifications fonctionnelles, modélisation UML, BPMN, MERISE</p>
-              </div>
-              
-              <div>
-                <h4 class="font-semibold text-gray-800 dark:text-gray-200">Compétences comportementales</h4>
-                <p class="text-gray-500 dark:text-gray-400 mt-0.5">Esprit analytique, résolution de problèmes, rigueur, organisation, adaptabilité, esprit d'équipe</p>
-              </div>
-            </div>
+<!-- --------------------------------------------------------
+      SESSION  : PROJECTS 
+      -------------------------------------------------------- -->
+<section id="projets" class="px-6 max-w-6xl mx-auto">
+  <div class="text-center mb-12">
+    <p class="text-2xl sm:text-3xl font-bold text-gray-900">Mes Projets & Prototypes</p>
+    <p class="mt-2 text-gray-600">Aperçu concret de mes réalisations techniques récentes.</p>
+  </div>
 
-            <div class="mt-6 flex justify-end border-t border-gray-100 dark:border-gray-800 pt-3">
-              <button onclick="document.getElementById('modal-competences').classList.add('hidden')" class="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                Fermer
-                </button>
-            </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600">Mémoire ULB (2025)</span>
         </div>
+        <h3 class="text-xl font-bold text-gray-900">Prototype Logistique Blockchain</h3>
+        <p class="mt-3 text-gray-600 text-sm">
+          Conception et développement d'une solution de traçabilité logistique décentralisée basée sur des Smart Contracts pour sécuriser les échanges.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded">Solidity</span>
+          <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded">Remix IDE</span>
+          <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded">MetaMask</span>
+        </div>
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-100 flex gap-4 text-sm font-medium">
+        <a href="home.html" target="_blank" class="text-indigo-600 hover:underline">Voir le projet →</a>
+        <a href="https://github.com/Emerance/emerance.github.io.git" target="_blank" class="text-gray-600 hover:text-gray-900">Code GitHub</a>
+      </div>
     </div>
-</div>
 
-
-    <!-- --------------------------------------------------------
-       MODALE : EXPÉRIENCES
-       -------------------------------------------------------- -->
-  <div id="modal-experiences" class="hidden fixed inset-0 z-50 overflow-y-auto" role="dialog" aria-modal="true">
-    <div class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-        <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
-        <div onclick="document.getElementById('modal-experiences').classList.add('hidden')" class="fixed inset-0 transition-opacity bg-gray-500/75 backdrop-blur-sm"></div>
-        <div class="relative inline-block w-full max-w-xl p-6 overflow-hidden text-left align-middle bg-white dark:bg-gray-900 rounded-xl shadow-xl transform transition-all">
-          <!-- En-tête -->  
-          <div class="flex items-center gap-3 border-b border-gray-100 dark:border-gray-800 pb-3">
-              <i class="fa-solid fa-briefcase text-xl text-blue-600 dark:text-blue-400"></i>
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white">Mon Expérience</h3>
-          </div>
-          <!-- Contenu -->
-          <div class="mt-6 space-y-8 pl-4 border-l border-gray-200 dark:border-gray-700">
-            <div class="relative">
-              <div class="absolute -left-[21px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
-              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-                  <div>
-                      <h4 class="font-bold text-gray-950 dark:text-white">FeuzeSolutions</h4>
-                      <p class="text-sm font-medium text-gray-700 dark:text-gray-300">Analyste IT</p>
-                  </div>
-                  <span class="text-xs text-gray-500 dark:text-gray-400 font-medium">06/2021 – 09/2021 | Douala, Cameroun</span>
-              </div>
-              <ul class="mt-2 list-disc list-inside space-y-1 text-sm text-gray-600 dark:text-gray-400">
-                <li>Analyse et rédaction de spécifications fonctionnelles</li>
-                <li>Conception et gestion de bases de données</li>
-                <li>Mise en place de maquettes</li>
-                <li>Suivi des anomalies via Jira</li>
-              </ul>
-            </div>
-
-              <div class="relative">
-                  <div class="absolute -left-[21px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
-                  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-                      <div>
-                          <h4 class="font-bold text-gray-950 dark:text-white">SolutionsGFF</h4>
-                          <p class="text-sm font-medium text-gray-700 dark:text-gray-300">Développeur junior</p>
-                      </div>
-                      <span class="text-xs text-gray-500 dark:text-gray-400 font-medium">06/2019 – 09/2019 | Douala, Cameroun</span>
-                  </div>
-                  <ul class="mt-2 list-disc list-inside space-y-1 text-sm text-gray-600 dark:text-gray-400">
-                      <li>Développement web responsive (HTML5, CSS3, JavaScript)</li>
-                      <li>Contribution au développement back-end avec Laravel (PHP)</li>
-                      <li>Réalisation de tests manuels et vérification des interfaces</li>
-                      <li>Participation au déploiement et à la validation</li>
-                  </ul>
-              </div>
-
-          </div>
-
-          <!-- Pied de page -->
-          <div class="mt-6 flex justify-end border-t border-gray-100 dark:border-gray-800 pt-3">
-              <button onclick="document.getElementById('modal-experience').classList.add('hidden')" class="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                  Fermer
-              </button>
-          </div>
+    <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600">Développement Front-End</span>
+          <span class="text-xs bg-blue-100 text-blue-800 px-2.5 py-0.5 rounded-full">En cours</span>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900">Application Web Django/Python</h3>
+        <p class="mt-3 text-gray-600 text-sm">
+          Développement d'une application de gestion d'un établissement primaire permettant de gérer les élèves, les enseignants, les cours, ainsi que les différentes notes.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded">Python</span>
+          <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded">Django</span>
+          <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-100 flex gap-4 text-sm font-medium">
+        <a href="https://futurmonde.onrender.com/" target="_blank" class="text-indigo-600 hover:underline">Voir la démo →</a>
+        <a href="https://github.com/Emerance/futurMonde.git" target="_blank" class="text-gray-600 hover:text-gray-900">Code GitHub</a>
       </div>
     </div>
   </div>
-
-  <!-- --------------------------------------------------------
-       MODALE  : FORMATION
-       -------------------------------------------------------- -->
-  <div id="modal-formation" class="hidden fixed inset-0 z-50 overflow-y-auto" role="dialog" aria-modal="true">
-    <div class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-        <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
-        <div onclick="document.getElementById('modal-formation').classList.add('hidden')" class="fixed inset-0 transition-opacity bg-gray-500/75 backdrop-blur-sm"></div>
-        <div class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
-            <!-- En-tête -->
-            <div class="flex items-center gap-3 border-b border-gray-100 dark:border-gray-800 pb-3">
-                <i class="fa-solid fa-graduation-cap text-xl text-blue-600 dark:text-blue-400"></i>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Ma Formation</h3>
-            </div>
-
-            <!-- Contenu -->
-            <div class="mt-6 space-y-6 pl-4 border-l border-gray-200 dark:border-gray-700">
-              <div class="relative">
-                <div class="absolute -left-[21px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-                  <h4 class="font-bold text-gray-950 dark:text-white max-w-md">Master en sciences et technologies de l'information et de la communication</h4>
-                  <span class="text-xs font-bold text-blue-600 dark:text-blue-400">2025</span>
-                </div>
-                <p class="text-sm font-medium text-gray-700 dark:text-gray-300 mt-0.5">Université Libre de Bruxelles</p>
-                <p class="mt-2 text-xs text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-gray-800/40 p-2.5 rounded-lg border border-gray-100 dark:border-gray-800/50">
-                    <span class="font-semibold text-gray-800 dark:text-gray-200">Mémoire :</span> Prototype logistique basé sur des smart contracts (Solidity, Remix IDE, MetaMask - testnet Sepolia).
-                </p>
-              </div>
-
-              <div class="relative">
-                <div class="absolute -left-[21px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-                  <h4 class="font-bold text-gray-950 dark:text-white">Master I, Management des systèmes d'information</h4>
-                  <span class="text-xs font-bold text-blue-600 dark:text-blue-400">2019</span>
-                </div>
-                <p class="text-sm font-medium text-gray-700 dark:text-gray-300 mt-0.5">Institut de Management et de l'Entreprenariat</p>
-              </div>
-
-              <div class="relative">
-                <div class="absolute -left-[21px] top-1.5 w-3 h-3 bg-blue-600 rounded-full"></div>
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-                  <h4 class="font-bold text-gray-950 dark:text-white">Ingénieur des travaux informatiques - Génie logiciel</h4>
-                  <span class="text-xs font-bold text-blue-600 dark:text-blue-400">2018</span>
-                </div>
-                <p class="text-sm font-medium text-gray-700 dark:text-gray-300 mt-0.5">Institut Africain d'Informatique</p>
-              </div>
-
-            </div>
-
-            <!-- Pied de page -->
-            <div class="mt-6 flex justify-end border-t border-gray-100 dark:border-gray-800 pt-3">
-                <button onclick="document.getElementById('modal-formation').classList.add('hidden')" class="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                    Fermer
-                </button>
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
-
+</section>
 </body>
 </html>

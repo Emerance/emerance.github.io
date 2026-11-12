@@ -21,21 +21,18 @@
       <div id="connectMsg" style="display:none; margin-top:10px;"></div>
     </section>
     <div id="messages" style="display: none;"></div>
-    <!-- Création de produit -->
     <section id="form-creer">
       <h2>Créer un produit</h2>
       <input type="number" id="id-produit" placeholder="ID produit">
-      <input type="text" id="nom-produit" placeholder="Nom du produit">
-      <input type="text" id="desc-produit" placeholder="Description">
+      <input class="inputText" type="text" id="nom-produit" placeholder="Nom du produit">
+      <input class="inputText" type="text" id="desc-produit" placeholder="Description">
       <button id="btnCreerProduit">Créer</button>
     </section>
 
-    <!-- Mise à jour du statut -->
     <section id="form-statut">
       <h2>Mettre à jour le statut</h2>
       <select class="select" id="id-statut">
         <option value="">-- Sélectionner un produit --</option>
-        <!-- Options générées dynamiquement -->
       </select>
       <select class="select" id="nouveau-statut">
         <option value="en production">En production</option>
